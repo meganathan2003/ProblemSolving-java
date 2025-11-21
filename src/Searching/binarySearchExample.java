@@ -18,7 +18,7 @@ public class binarySearchExample {
 
         int result = binarySearch(nums,target);
 
-        System.out.println("Element found in array index at"+ result);
+        System.out.println("Element found in array index at "+ result);
     }
 
     public static int binarySearch(int[] nums, int target) {

@@ -1,5 +1,14 @@
 package Sorting;
 
+/**
+ * Here the Data structure is Bubble sort like
+ * we get the unsorted array, and we have to sort them
+ * with the effiecent way and bubble sort takes (On2) time
+ * because we uses here two loops
+ *
+ * @author Meganathan
+ */
+
 public class BubbleSort {
 
     // Create a new method for bubble sort for reusable

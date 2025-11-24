@@ -26,7 +26,18 @@ public class LinkedList {
         if (head == null) head = newNode;
         else {
             while (current.next != null) current = current.next;
-            current.next = newNode;
+            current.next = newNode; // attach the new node at the end
         }
+    }
+
+    // print the values
+    public void printValues() {
+        Node current = head;
+
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
     }
 }

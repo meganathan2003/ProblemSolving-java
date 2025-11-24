@@ -8,8 +8,8 @@ public class MergeSortExample {
         if (l < r) {
 
             int mid = (l + r) / 2;
-            mergeSort(arr, l, mid);
-            mergeSort(arr, mid + 1, r);
+            mergeSort(arr, l, mid); // This for divide the left subarray
+            mergeSort(arr, mid + 1, r); // This for divide the right subarray
 
             // After we divide we have to merge them all
             merge(arr, l, mid, r);

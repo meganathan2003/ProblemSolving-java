@@ -47,4 +47,7 @@ public class LinkedList {
         newNode.next = head; // This line refer that new node is currently refer to head
         head = newNode;
     }
+
+    
+
 }

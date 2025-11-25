@@ -40,4 +40,11 @@ public class LinkedList {
         }
         System.out.println();
     }
+
+    // Create a method for add the element in first
+    public void addFirst(int data){
+        Node newNode = new Node(data); // [7|null] -> new node
+        newNode.next = head; // This line refer that new node is currently refer to head
+        head = newNode;
+    }
 }

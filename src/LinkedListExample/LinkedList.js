@@ -35,5 +35,11 @@ class LinkedList {
             }
             current.next = newNode;
         }
+    };
+
+    // Method for delete the element 
+    delete(data) {
+        if (this.head === null) return;
+
     }
 }

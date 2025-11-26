@@ -1,45 +1,92 @@
-// Here we will write the code in linkedlist
-
-
 class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
     }
-};
+}
 
-
-// Create a new class callled LinkedList
 class LinkedList {
 
     constructor() {
         this.head = null;
     }
 
-    // Create a new method to add new node
     addFirst(data) {
         let newNode = new Node(data);
+        console.log("Adding at first:", newNode);
+
         newNode.next = this.head;
         this.head = newNode;
-    };
 
-    // Method for add a new element
+        console.log("New HEAD →", this.head);
+        console.log("---------------------");
+    }
+
     add(data) {
         let newNode = new Node(data);
-        let current = this.head;
+        console.log("Adding:", newNode);
 
-        if (this.head === null) this.head = newNode;
-        else {
-            while (current.next !== null) {
-                current = current.next;
-            }
-            current.next = newNode;
+        if (this.head === null) {
+            this.head = newNode;
+            console.log("List empty. HEAD →", this.head);
+            console.log("---------------------");
+            return;
         }
-    };
 
-    // Method for delete the element 
+        let current = this.head;
+        console.log("Start at HEAD:", current);
+
+        while (current.next !== null) {
+            console.log("At node:", current.data, " → moving to next");
+            current = current.next;
+        }
+
+        console.log("Reached last node:", current.data);
+        current.next = newNode;
+
+        console.log("Added new node at end →", current.next);
+        console.log("---------------------");
+    }
+
     delete(data) {
-        if (this.head === null) return;
+        console.log("Deleting:", data);
+        console.log("Current HEAD:", this.head);
 
+        // Delete head
+        if (this.head !== null && this.head.data === data) {
+            console.log("Deleting HEAD node:", this.head.data);
+            this.head = this.head.next;
+            console.log("New HEAD:", this.head);
+            console.log("---------------------");
+            return;
+        }
+
+        let current = this.head;
+        console.log("Start search at:", current);
+
+        while (current.next !== null && current.next.data !== data) {
+            console.log("Looking at:", current.data, "| Next node:", current.next.data);
+            current = current.next;
+        }
+
+        // If found
+        if (current.next !== null) {
+            console.log("Found node to delete:", current.next.data);
+            current.next = current.next.next;
+            console.log("Now", current.data, "points to", current.next);
+        } else {
+            console.log("Data NOT found!");
+        }
+
+        console.log("---------------------");
     }
 }
+
+
+let list = new LinkedList();
+
+list.add(10);
+list.add(30);
+
+
+list.delete(30);

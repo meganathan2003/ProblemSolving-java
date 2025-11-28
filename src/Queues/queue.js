@@ -27,13 +27,11 @@ class Queue {
         // [1,5,10]
         const element = this.arr[this.front]; // get the front element which means 1
         this.front++;
-        this.size--;
         return element;
     }
 
     show() {
-
-        for (let i = this.front; i < si; i++) {
+        for (let i = this.front; i < this.size; i++) {
             console.log(this.arr[i]);
         }
     }

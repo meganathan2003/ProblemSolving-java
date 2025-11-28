@@ -43,5 +43,7 @@ queue.enqueue(10);
 queue.enqueue(20);
 
 queue.dequeue();
+queue.enqueue(30);
+queue.enqueue(40);
 console.log(queue.show());
 

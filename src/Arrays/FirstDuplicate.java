@@ -4,6 +4,7 @@ import java.util.Set;
 
 public class FirstDuplicate {
 
+    // create a new method or function
     public static int firstDuplicate(int[] products) {
 
         Set<Integer> seen = new HashSet<>();
@@ -16,7 +17,6 @@ public class FirstDuplicate {
 
             seen.add(product);
         }
-
         return -1;
     }
 

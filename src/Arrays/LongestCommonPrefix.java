@@ -21,4 +21,9 @@ public class LongestCommonPrefix {
 
         return prefix;
     }
+
+    static void main(String[] args) {
+        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+
+    }
 }

@@ -1,5 +1,8 @@
 package Arrays;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LongestConsecutive {
     public static int longestConsecutive(int[] nums) {
 

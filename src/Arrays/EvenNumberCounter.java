@@ -19,7 +19,6 @@ public class EvenNumberCounter {
         int[] arr = {1, 4, 7, 8, 10, 13};
 
         int result = countEvenNumbers(arr);
-
         System.out.println(result);
     }
 }

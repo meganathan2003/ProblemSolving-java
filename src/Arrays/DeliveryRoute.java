@@ -17,14 +17,14 @@ public class DeliveryRoute {
 
             if (location - current == k) {
                 refuels++;
-                current = location;
+                current = location; // set the current location
             }
         }
 
         return refuels;
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int[] locations = {2, 5, 6, 9, 12};
         int k = 5;

@@ -20,6 +20,7 @@ class ATMWithdrawal {
     static void main(String[] args) {
 
         int[] notes = {2000, 500, 200, 100};
+
         int amount = 4700;
 
         System.out.println(minimumNotes(notes, amount));

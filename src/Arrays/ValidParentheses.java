@@ -29,7 +29,7 @@ public class ValidParentheses {
         return stack.isEmpty();
     }
 
-    public static void main(String[] args) {
+     static void main(String[] args) {
         System.out.println(isValid("()[]{}")); // true
         System.out.println(isValid("([)]"));   // false
         System.out.println(isValid("{[]}"));   // true

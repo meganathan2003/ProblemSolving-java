@@ -1,4 +1,5 @@
 package Arrays;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,7 +21,7 @@ public class FirstDuplicate {
         return -1;
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int[] products = {101, 205, 309, 205, 101};
 

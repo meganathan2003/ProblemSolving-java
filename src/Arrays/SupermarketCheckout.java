@@ -40,13 +40,12 @@ public class SupermarketCheckout {
         return time;
     }
 
-     static void main(String[] args) {
+    static void main(String[] args) {
 
         Customer[] customers = {
                 new Customer(5),
                 new Customer(2),
-                new Customer(8),
-                new Customer(3)
+                new Customer(8)
         };
 
         int k = 3;

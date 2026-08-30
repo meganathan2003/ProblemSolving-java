@@ -44,8 +44,7 @@ public class SupermarketCheckout {
 
         Customer[] customers = {
                 new Customer(5),
-                new Customer(2),
-                new Customer(8)
+                new Customer(2)
         };
 
         int k = 3;

@@ -48,9 +48,7 @@ public class SupermarketCheckout {
         };
 
         int k = 3;
-
         int result = totalTime(customers, k);
-
         System.out.println("Total time = " + result + " seconds");
     }
 }

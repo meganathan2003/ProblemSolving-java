@@ -8,7 +8,7 @@ class Animal {
     }
 }
 
-// extend panure class here we refer the single level inheritance
+/* extend panure class here we refer the single level inheritance */
 class Dog extends Animal {
     void makeSound() {
         System.out.println("BOW BOW");

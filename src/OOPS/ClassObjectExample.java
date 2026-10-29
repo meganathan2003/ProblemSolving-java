@@ -23,6 +23,7 @@ public class ClassObjectExample {
         computer.playMusic();
 
         String str = computer.getMeAPen(10);
+        String str2 = computer.getMeAPen(2);
 
         System.out.println(str);
 

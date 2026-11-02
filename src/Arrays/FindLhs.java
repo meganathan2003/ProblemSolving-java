@@ -17,7 +17,7 @@ public class FindLhs {
 
         int maxLength = 0;
 
-        // find the hormonies value
+        // find the harmonies value
         for (int num : freq.keySet()) {
 
             if (freq.containsKey(num + 1)) {
